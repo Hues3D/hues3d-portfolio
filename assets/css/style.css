@@ -927,6 +927,20 @@ main,
   .nav {
     align-items: flex-start;
     flex-direction: column;
+    gap: 16px;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px 18px;
+    font-size: 11px;
+  }
+
+  .nav-links a {
+    width: 100%;
+    padding-bottom: 4px;
   }
 
   .hero,
@@ -935,6 +949,11 @@ main,
   .asset-hero {
     padding-top: 56px;
     padding-bottom: 56px;
+  }
+
+  .hero h1 {
+    font-size: clamp(30px, 10vw, 44px);
+    max-width: 10ch;
   }
 
   .image-grid {
