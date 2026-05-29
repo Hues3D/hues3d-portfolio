@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creation Workflow | Hues</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo-wrap">
+      <div class="logo-mark"><img src="assets/logo_yellow.png" alt="Hues logo" /></div>
+      <div class="logo-text">
+        <strong>Hues</strong>
+        <span>James Hughes</span>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="3d-work.html">3D Work</a>
+      <a href="creation-workflow.html" class="active">Creation Workflow</a>
+      <a href="hues-studios.html">Hues Studios</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="page-title">
+    <div class="kicker">Creation Workflow</div>
+    <h1>The pipeline behind the finished work.</h1>
+    <p>Model, sculpt, and final render breakdowns.</p>
+  </section>
+
+  <section class="section tight">
+    <article class="workflow-item featured-workflow">
+      <div class="process-grid maximized previewable">
+        <div class="process-shot">
+          <img src="assets/images/stone-pickaxe-wfr.png" alt="Stone Pickaxe wireframe render" />
+          <div class="caption">Wireframe Render</div>
+        </div>
+        <div class="process-shot">
+          <img src="assets/images/stone-pickaxe-sr.png" alt="Stone Pickaxe sculpt render" />
+          <div class="caption">Sculpt Render</div>
+        </div>
+        <div class="process-shot">
+          <img src="assets/images/stone-pickaxe-fr.png" alt="Stone Pickaxe final render" />
+          <div class="caption">Final Render</div>
+        </div>
+      </div>
+      <div class="workflow-copy">
+        <h3>Stone Pickaxe</h3>
+        <p>
+          A line-stylized survival tool shown through its core workflow stages, from clean wireframe structure
+          to sculpt pass and final textured render.
+        </p>
+      </div>
+    </article>
+  </section>
+
+  <section class="section tight">
+    <div class="workflow-list">
+      <article class="workflow-item featured-workflow">
+        <div class="process-grid previewable">
+          <div class="process-shot"><div class="placeholder"></div><div class="caption"></div></div>
+          <div class="process-shot"><div class="placeholder"></div><div class="caption"></div></div>
+          <div class="process-shot"><div class="placeholder"></div><div class="caption"></div></div>
+        </div>
+        <div class="workflow-copy">
+          <h3>Stylized building asset</h3>
+          <p>
+            Blocked out in Blender, sculpt-enhanced for surface variation, baked for clean read, then textured
+            to support a clear survival-game style before final engine implementation.
+          </p>
+        </div>
+      </article>
+
+      <article class="workflow-item featured-workflow">
+        <div class="process-grid previewable">
+          <div class="process-shot"><div class="placeholder"></div><div class="caption"></div></div>
+          <div class="process-shot"><div class="placeholder"></div><div class="caption"></div></div>
+          <div class="process-shot"><div class="placeholder"></div><div class="caption"></div></div>
+        </div>
+        <div class="workflow-copy">
+          <h3>Realistic prop asset</h3>
+          <p>
+            Built around material separation, believable roughness variation, and a final presentation that shows
+            controlled surface response instead of overworked detail.
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section tight">
+    <div class="workflow-summary">
+      <div class="small-label">Core Pipeline</div>
+      <h2>Blender, ZBrush, Marmoset Toolbag, Substance Painter, Photoshop, and Roblox Studio.</h2>
+      <p class="lead">
+        The exact order shifts depending on the piece, but the process consistently focuses on clean forms,
+        efficient baking, and textures that carry the personality of the asset.
+      </p>
+      <div class="pipeline">
+        <span>Blender</span>
+        <span>ZBrush</span>
+        <span>Marmoset Toolbag</span>
+        <span>Substance Painter</span>
+        <span>Photoshop</span>
+        <span>Roblox Studio</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="lightbox" id="workflow-lightbox" aria-hidden="true">
+  <div class="lightbox-dialog">
+    <button class="lightbox-close" type="button" aria-label="Close image preview">Close</button>
+    <figure class="lightbox-figure">
+      <img src="" alt="" id="workflow-lightbox-image" />
+      <figcaption id="workflow-lightbox-caption"></figcaption>
+    </figure>
+  </div>
+</div>
+
+<footer class="footer">
+  <div>&copy; Hues / James Hughes. 3D artist, asset creator, and game developer.</div>
+</footer>
+
+<script>
+  (function () {
+    const lightbox = document.getElementById("workflow-lightbox");
+    const lightboxImage = document.getElementById("workflow-lightbox-image");
+    const lightboxCaption = document.getElementById("workflow-lightbox-caption");
+    const closeButton = lightbox.querySelector(".lightbox-close");
+    const clickableImages = document.querySelectorAll(".process-grid.previewable .process-shot img");
+
+    function closeLightbox() {
+      lightbox.classList.remove("is-open");
+      lightbox.setAttribute("aria-hidden", "true");
+      lightboxImage.src = "";
+      lightboxImage.alt = "";
+      lightboxCaption.textContent = "";
+    }
+
+    clickableImages.forEach((image) => {
+      image.addEventListener("click", () => {
+        const caption = image.closest(".process-shot").querySelector(".caption");
+        lightboxImage.src = image.src;
+        lightboxImage.alt = image.alt;
+        lightboxCaption.textContent = caption ? caption.textContent : "";
+        lightbox.classList.add("is-open");
+        lightbox.setAttribute("aria-hidden", "false");
+      });
+    });
+
+    closeButton.addEventListener("click", closeLightbox);
+
+    lightbox.addEventListener("click", (event) => {
+      if (event.target === lightbox) {
+        closeLightbox();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && lightbox.classList.contains("is-open")) {
+        closeLightbox();
+      }
+    });
+  }());
+</script>
+
+</body>
+</html>
