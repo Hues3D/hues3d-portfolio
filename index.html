@@ -3,136 +3,159 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hues | James Hughes Portfolio</title>
-  <meta name="description" content="Hues / James Hughes portfolio featuring 3D art, asset creation, workflow studies, and solo game development." />
+  <title>Hues Studios Devlog | A solo-built stylized survival game</title>
+  <meta name="description" content="Development log for a solo-built, line-stylized survival and base-building game by Hues Studios (James Hughes)." />
   <meta name="theme-color" content="#12110F" />
-  <meta property="og:title" content="Hues | James Hughes Portfolio" />
-  <meta property="og:description" content="3D artist and video game developer portfolio featuring asset creation, workflow studies, and solo game development." />
+  <meta property="og:title" content="Hues Studios Devlog" />
+  <meta property="og:description" content="Follow the development of a solo-built, line-stylized survival and base-building game." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="/assets/images/banner.png" />
-  <meta property="og:image:alt" content="Hues3D portfolio banner" />
+  <meta property="og:image" content="assets/images/banner.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Hues | James Hughes Portfolio" />
-  <meta name="twitter:description" content="3D artist and video game developer portfolio featuring asset creation, workflow studies, and solo game development." />
-  <meta name="twitter:image" content="/assets/images/banner.png" />
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
 <header class="site-header">
-  <nav class="nav">
-    <a href="index.html" class="logo-wrap">
-      <div class="logo-mark"><img src="assets/logo_yellow.png" alt="Hues logo" /></div>
-      <div class="logo-text">
-        <strong>Hues</strong>
-        <span>James Hughes</span>
-      </div>
+  <nav class="nav" aria-label="Main">
+    <a href="index.html" class="brand">
+      <img src="assets/logo_yellow.png" alt="" />
+      <span class="brand-name">Hues <span>Studios</span></span>
     </a>
     <div class="nav-links">
-      <a href="index.html" class="active">Home</a>
-      <a href="3d-work.html">3D Work</a>
-      <a href="creation-workflow.html">Creation Workflow</a>
-      <a href="hues-studios.html">Hues Studios</a>
+      <a href="index.html" aria-current="page">Devlog</a>
+      <a href="game.html">The Game</a>
       <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
     </div>
   </nav>
 </header>
 
-<main>
+<main id="main">
   <section class="hero">
-    <div class="hero-grid">
-      <div>
-        <div class="kicker">3D Artist & Game Developer</div>
-        <h1>3D Artist and video game developer.</h1>
+    <div class="hero-media">
+      <img src="assets/images/web/stone-pickaxe-fr.jpg" alt="" fetchpriority="high" />
+    </div>
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <span class="status">In active development</span>
+        <h1>Building a survival game, <em>one piece at a time.</em></h1>
         <p>
-          Hues is the online alias of James Hughes, a 3D artist focused on asset creation, sculpting,
-          material definition, and complete game asset workflows. The work here is centered on
-          craftsmanship, readability, and professional presentation for games.
+          The development log for a solo-built, line-stylized survival and base-building game.
+          Art, systems, and progress, documented as it happens.
         </p>
         <div class="hero-actions">
-          <a class="button primary" href="3d-work.html">View 3D Work</a>
-          <a class="button" href="creation-workflow.html">See Workflow</a>
+          <a class="button primary" href="#devlog">Read the devlog</a>
+          <a class="button" href="game.html">About the game</a>
         </div>
       </div>
-      <aside class="hero-note">
-        <div class="small-label">Current Focus</div>
-        <strong>Asset creation, texturing, and solo game development through Hues Studios.</strong>
-        <p>
-          Professional experience across shipped team projects and ongoing independent development,
-          with a portfolio built to show the full production pipeline behind each asset.
-        </p>
-        <div class="metric-list">
-          <div class="metric"><span>Specialization</span><span>3D Asset Creation</span></div>
-          <div class="metric"><span>Strongest Area</span><span>Texturing</span></div>
-          <div class="metric"><span>Pipeline</span><span>Blender to Roblox Studio</span></div>
-        </div>
-      </aside>
     </div>
   </section>
 
-  <section class="section tight">
-    <div class="feature-strip">
-      <article class="feature-card">
-        <div class="eyebrow">Image First</div>
-        <h3>Artwork leads.</h3>
-        <p>
-          The portfolio is built around final presentation, close-up detail, and readable breakdowns
-          rather than oversized cards or software-heavy branding.
-        </p>
-      </article>
-      <article class="feature-card">
-        <div class="eyebrow">Full Pipeline</div>
-        <h3>Process is visible.</h3>
-        <p>
-          Modeling, sculpting, baking, texturing, and in-engine implementation are shown together so
-          each piece communicates both artistic and technical understanding.
-        </p>
-      </article>
-      <article class="feature-card">
-        <div class="eyebrow">Hues Studios</div>
-        <h3>Development stays active.</h3>
-        <p>
-          The studio page functions as a clean devlog for ongoing solo game work, art direction, and
-          system development.
-        </p>
-      </article>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="section-head">
-      <div>
-        <div class="kicker">Featured Work</div>
-        <h2>A small selection to start.</h2>
+  <section class="section" id="devlog">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Devlog</span>
+          <h2>Latest updates</h2>
+        </div>
       </div>
-      <p class="section-intro">
-        The home page stays selective. The full gallery expands into realism, stylized work,
-        line-stylized assets, and experiments.
-      </p>
-    </div>
-    <div class="image-grid">
-      <a class="image-tile large" href="asset-twig-foundation.html">
-        <div class="thumb"><div class="placeholder"></div></div>
-        <div class="tile-title"><h3>Twig Foundation</h3><span>Cartoon / Line-Stylized</span></div>
-      </a>
-      <a class="image-tile" href="asset-survival-prop.html">
-        <div class="thumb"><div class="placeholder"></div></div>
-        <div class="tile-title"><h3>Survival Prop</h3><span>Stylized</span></div>
-      </a>
-      <a class="image-tile" href="asset-realistic-material-study.html">
-        <div class="thumb"><div class="placeholder"></div></div>
-        <div class="tile-title"><h3>Realistic Material Study</h3><span>Realism</span></div>
-      </a>
+
+      <div class="feed-layout">
+        <div>
+          <!-- Newest entry goes here. Move the previous one down into .post-list. -->
+          <a class="featured-post" href="devlog/small-wooden-storage-box.html">
+            <div class="post-thumb">
+              <img src="assets/images/web/small-wooden-storage-box-fr.jpg" alt="Small Wooden Storage Box, final render" />
+            </div>
+            <div class="post-body">
+              <div class="meta"><span class="tag">Art</span><time datetime="2026-05-29">May 29, 2026</time><span class="entry-no">#003</span></div>
+              <h3>Small Wooden Storage Box</h3>
+              <p>
+                A small storage prop for the player's base: how much material identity a simple crate can carry
+                through shape, edge treatment, and controlled wood detail.
+              </p>
+              <span class="read-more">Read entry &rarr;</span>
+            </div>
+          </a>
+
+          <div class="filters" role="group" aria-label="Filter entries">
+            <button type="button" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" data-filter="art" aria-pressed="false">Art</button>
+            <button type="button" data-filter="update" aria-pressed="false">Updates</button>
+          </div>
+
+          <div class="post-list">
+            <a class="post-row" href="devlog/small-wooden-storage-box.html" data-tags="art">
+              <div class="post-thumb"><img src="assets/images/web/small-wooden-storage-box-fr-sm.jpg" alt="" loading="lazy" /></div>
+              <div>
+                <div class="meta"><span class="tag">Art</span><time datetime="2026-05-29">May 29, 2026</time><span class="entry-no">#003</span></div>
+                <h3>Small Wooden Storage Box</h3>
+                <p>A small storage prop for the player's base, focused on stylized wood and a readable silhouette.</p>
+              </div>
+            </a>
+            <a class="post-row" href="devlog/stone-pickaxe.html" data-tags="art">
+              <div class="post-thumb"><img src="assets/images/web/stone-pickaxe-fr-sm.jpg" alt="" loading="lazy" /></div>
+              <div>
+                <div class="meta"><span class="tag">Art</span><time datetime="2026-05-29">May 29, 2026</time><span class="entry-no">#002</span></div>
+                <h3>Stone Pickaxe: the first tool</h3>
+                <p>The first finished asset, and the piece that set the rules for how every tool in the game will look.</p>
+              </div>
+            </a>
+            <a class="post-row" href="devlog/introducing-the-project.html" data-tags="update">
+              <div class="post-thumb"><img src="assets/images/web/stone-pickaxe-wfr-sm.jpg" alt="" loading="lazy" /></div>
+              <div>
+                <div class="meta"><span class="tag">Update</span><time datetime="2026-05-29">May 29, 2026</time><span class="entry-no">#001</span></div>
+                <h3>Introducing the project</h3>
+                <p>What I'm making, why I'm making it alone, and what this devlog will cover.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <aside class="sidebar" aria-label="Project info">
+          <div class="card">
+            <h3>At a glance</h3>
+            <dl class="facts">
+              <div><dt>Genre</dt><dd>Survival / Base-building</dd></div>
+              <div><dt>Style</dt><dd>Line-stylized 3D</dd></div>
+              <div><dt>Engine</dt><dd>Roblox Studio</dd></div>
+              <div><dt>Team</dt><dd>Solo</dd></div>
+              <div><dt>Status</dt><dd>In development</dd></div>
+            </dl>
+            <a class="button" href="game.html">More about the game</a>
+          </div>
+          <div class="card">
+            <h3>Progress</h3>
+            <ul class="checklist">
+              <li class="done">Line-stylized art direction</li>
+              <li class="done">Stone Pickaxe</li>
+              <li class="done">Small Wooden Storage Box</li>
+              <li class="active">Modular building set</li>
+              <li>Core survival systems</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
     </div>
   </section>
 </main>
 
-<footer class="footer">
-  <div>&copy; Hues / James Hughes. 3D artist, asset creator, and game developer.</div>
+<footer class="site-footer">
+  <div class="container">
+    <div>&copy; 2026 Hues Studios &middot; James Hughes</div>
+    <div class="footer-links">
+      <a href="index.html">Devlog</a>
+      <a href="game.html">The Game</a>
+      <a href="about.html">About</a>
+      <a href="https://github.com/Hues3D">GitHub</a>
+    </div>
+  </div>
 </footer>
 
+<script src="assets/js/site.js" defer></script>
 </body>
 </html>
