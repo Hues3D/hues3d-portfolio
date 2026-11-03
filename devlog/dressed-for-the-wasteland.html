@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dressed for the Wasteland | Remnants Devlog</title>
+  <meta name="description" content="Devlog #005: clothing, Metal and Steel doors, crouch animation, and a rebuilt interface." />
+  <meta name="theme-color" content="#12110F" />
+  <meta property="og:title" content="Devlog #005: Dressed for the Wasteland" />
+  <meta property="og:description" content="Clothing, Metal and Steel doors, crouch animation, and a rebuilt interface." />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="../assets/images/banner.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main">
+    <a href="../index.html" class="brand">
+      <img src="../assets/logo_yellow.png" alt="" />
+      <span class="brand-name">Hues <span>Studios</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="../index.html" aria-current="page">Devlog</a>
+      <a href="../game.html">The Game</a>
+      <a href="../about.html">About</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+  <article>
+    <header class="article-header container">
+      <a class="back-link" href="../index.html#devlog">&larr; All entries</a>
+      <div class="narrow">
+        <div class="meta"><span class="tag">Update</span><span class="entry-no">Devlog #005</span></div>
+        <h1>Dressed for the Wasteland</h1>
+        <p class="lede">
+          Survivors can now wear what they find, bases get two tougher doors, and almost every screen in the
+          game has been rebuilt.
+        </p>
+        <div class="meta">
+          <span>Hues Studios</span>
+          <span>&middot;</span>
+          <time datetime="2026-11-03">November 3, 2026</time>
+          <span>&middot;</span>
+          <span>3 min read</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="prose">
+        <p>
+          The last two months were one of the biggest stretches of work on Remnants so far. Survivors can now
+          wear what they find, bases get two tougher doors, and almost every screen in the game has been rebuilt,
+          from the first loading frame to the hotbar. Here's what's new.
+        </p>
+
+        <h2>Clothing comes to Remnants</h2>
+        <p>
+          The headline feature is a full <strong>clothing system</strong>. Every piece you wear shows on your
+          character, on your own arms and legs in first person, and on your sleeper after you log out, so what
+          you see on another survivor is really what they're wearing.
+        </p>
+        <p>
+          Clothing follows layering rules. Each body region has an <strong>under layer and an over layer</strong>,
+          and putting on something that clashes with what you're wearing takes the old piece off for you.
+          No menus to fight with.
+        </p>
+        <p>The first wardrobe includes:</p>
+        <ul>
+          <li>Baseball Cap, Hoodie, Utility Pants and Military Boots, all hand-modelled and textured</li>
+          <li>Pork Pie Hat, T-Shirt and Shorts</li>
+          <li>The <strong>Rad Suit</strong>: a 46-piece full-body suit, gloves included, built for the parts of the map that don't want you there</li>
+        </ul>
+        <p>
+          Every clothing item also has its own model when dropped: a folded bundle on the ground instead of a
+          generic loot bag. The drops share textures with the worn pieces, which sets things up for skins later.
+        </p>
+
+        <h2>Metal and Steel doors</h2>
+        <p>
+          Wooden doors now have two stronger options. The <strong>Metal Door</strong> and <strong>Steel Door</strong>
+          each have their own model and health tier. The Steel Door adds a sliding viewing hatch you can open and
+          close from the interact wheel, so you can check who's knocking first.
+        </p>
+        <p>
+          Locks have been refitted too. Key locks and code locks sit on the plate just above the handle on both
+          faces of every door. Door damage has been rebalanced: doors no longer have a weak "soft side", and each
+          tool now does a fixed amount of damage depending on the door's tier.
+        </p>
+
+        <h2>Building and world fixes</h2>
+        <ul>
+          <li>The hammer's upgrade wheel now shows material icons and costs instead of text, and steel is now its own resource</li>
+          <li>Closed an exploit where hitting a wall's corner from the protected side counted as soft-side damage</li>
+          <li>Foundations placed at an angle can no longer wedge into each other</li>
+          <li>Structure debris and rock fragments clear away faster, and fragments shrink as they fall</li>
+          <li>Chests, furnaces and the Settlement Registry are resized to match the world's scale. They now fit properly against your walls and stop crowding your base</li>
+        </ul>
+
+        <h2>Movement</h2>
+        <p>
+          Crouching now has real animation: a crouch idle and a <strong>motion-captured crouch walk</strong> that
+          blend with your speed and keep your feet planted. It looks right from both first and third person.
+        </p>
+
+        <h2>A new face for the game</h2>
+        <p>
+          Based on direct feedback from our playtest community, the interface has been reworked from top to bottom:
+        </p>
+        <ul>
+          <li>A new loading screen with the Hues Studios ident, the Remnants title card, and a progress bar that tracks actual loading instead of a timer</li>
+          <li>A cleaner hotbar: a burnt-orange highlight on the selected slot and soft shadows behind icons</li>
+          <li>New vitals: health, hunger and thirst are now compact round badges whose icons fill up as the stat rises</li>
+          <li>A full Settings menu with rebindable keys, gameplay, graphics, audio and interface options. Your choices are saved to your account</li>
+          <li>Better scaling across PC screen sizes and aspect ratios</li>
+        </ul>
+
+        <h2>Fresh starts</h2>
+        <p>
+          New survivors now spawn with just a <strong>Primitive Pick</strong> and a <strong>Firefly Jar</strong>.
+          Everything else has to be found or earned.
+        </p>
+
+        <h2>What's next</h2>
+        <p>
+          Clothing isn't finished yet. Full cloth and leather sets and three types of armour are in production.
+          After that, the focus moves to <strong>combat and player damage</strong>, followed by
+          <strong>persistent saving</strong>.
+        </p>
+        <p>
+          Thanks to everyone testing and sending feedback. Much of this update came from you. See you in the Remnants.
+        </p>
+        <p>&mdash; Hues Studios</p>
+      </div>
+
+      <nav class="post-nav" aria-label="More entries">
+        <a class="prev" href="progress-report-october-2026.html"><small>Previous entry</small><span>&larr; Remnants: where the game stands</span></a>
+      </nav>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>&copy; 2026 Hues Studios &middot; James Hughes</div>
+    <div class="footer-links">
+      <a href="../index.html">Devlog</a>
+      <a href="../game.html">The Game</a>
+      <a href="../about.html">About</a>
+      <a href="https://github.com/Hues3D">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>
